@@ -9,11 +9,6 @@ import cv2
 import os
 import cvlib as cv
 
-# download pre-trained model file (one-time download)
-dwnld_link = "https://github.com/arunponnusamy/cvlib/releases/download/v0.2.0/gender_detection.model"
-model_path = get_file("gender_detection.model", dwnld_link,
-                      cache_subdir="pre-trained", cache_dir=os.getcwd())
-
 # load model
 model = load_model(model_path)
 
